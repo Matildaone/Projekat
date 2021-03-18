@@ -158,7 +158,7 @@ body {
 
 /* Box Model */
 
-. *,
+*,
 *:before,
 *:after {
     -moz-box-sizing: border-box;
@@ -690,4 +690,9 @@ body {
 #form_container input[type='email'],
 #form_container textarea {
     background: rgba(255, 255, 255, 0.2);
+}
+
+.footer-icons .fa {
+    color: #000;
+    margin: 5px;
 }
