@@ -8,7 +8,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet" />
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -78,8 +77,10 @@
         </div>
         <div class="about-text-holder">
             <h1>o nama</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Naša radionica postoji nepunih osam godina, i njeni članovi su deca uzrasta od 2 do 7 godina. U saradnji sa pozorištem Boško Buha, bibliotekom Jovan Jovanović Zmaj, i slikarkom Natašom Brkić, osmislili smo program gde se kroz glumu prezentuju
+                knjige iz raznih oblasti. Nakon kratke predstave deca crtaju o onome što su gledala i slušala. Cilj našeg rada je da deca uče jezik, nove pojmove kroz kratke sekcije, razvijajući samopouzdanje kroz kolektivni i kreativni rad. Pored malog
+                improvizovanog pozorišta i slikarskog kutka,naša radionica ima i prostoriju sa projektorom, gde je određenim danima omogućeno gledanje crtanih filmova. Naš prostor je u potpunosti adaptiran za sve dečije potrebe. Organizujemo izložbu radova
+                naših članova jednom godišnje u kući Đure Jakšića.<br> Za sva pitanja možete nam pisati putem mejla, ili pozvati nas.</p>
         </div>
     </section>
 
@@ -191,12 +192,6 @@
 
     </section>
 
-    <!-- MAPA -->
-    <section>
-        <div class="col-sm-12 col-xs-12 map-item">
-            <div id="map-v3-container"></div>
-        </div>
-    </section>
 
     <!-- INFO -->
     <section class="info text-center" id="contact">
@@ -208,6 +203,7 @@
                         <p>Zmaj Jovina 1</p>
                     </a>
                     <p>Beograd</p>
+                    <p>Radno vreme:<br>ponedeljak - subota <br>12h-19h </p>
                 </div>
                 <div class="col-xs-12 col-sm-4">
                     <a href="#"><img src="images/footer.png" class="footerLogo img img-responsive"></a>
@@ -228,6 +224,35 @@
         </div>
     </section>
 
+    <section>
+        <div class="check-in">
+            <a href="#myModal" class="add-note">Prijavi se za skolu</a>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <h1 class="header">Prijava</h1>
+                <form class="note-form" action="">
+                    <label for="">Ime i prezime</label></br>
+                    <input type="text" class="title"></br>
+                    <label for="">Email</label></br>
+                    <input class="note" type="text"></br>
+                    <input class="submit" type="submit">
+                    <div class="cancel">
+                        <a href="#close" class="cancel-btn">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <table class="note-table">
+            <tr>
+                <td class="header">Ime i prezime</td>
+                <td class="header">Email</td>
+            </tr>
+        </table>
+    </section>
+
 
 
 
@@ -237,7 +262,6 @@
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
