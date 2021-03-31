@@ -6,7 +6,16 @@ let noteTable = document.querySelector('.note-table');
 let cancel = document.querySelector('.cancel-btn');
 
 let noteDeleteButtons;
-let noteList = JSON.parse(localStorage.getItem('notes'));
+let noteList = JSON.parse(localStorage.getItem('notes')) || [];
+
+function createNote(title, note) {
+    this.title = title;
+    this.note = note;
+}
+
+function addNoteToLibrary(title, note) {
+    noteList.push(new createNote(title, note));
+}
 
 if (noteList !== null) {
     appendNotes();
@@ -32,10 +41,14 @@ function addNote(e) {
         newNote.note = note.value;
     }
 
-    title.value = '';
-    note.value = '';
+    /* title.value = '';
+     note.value = ''; */
 
-    noteList.push(newNote);
+    //noteList.push(newNote);
+    addNoteToLibrary(
+        e.target[0].value,
+        e.target[1].value
+    );
     appendNotes();
     cancel.click();
 
